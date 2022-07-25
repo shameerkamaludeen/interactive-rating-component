@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<meta name="description"
+		content="This is a solution to the interactive rating component challenge on Frontend Mentor">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<title>Frontend Mentor | Interactive rating component</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/main.css">
+
+	<script src="scripts/main.js" defer></script>
 </head>
+
 <body>
+	<main>
+		<h1 class="main-heading mh-hide-visually">Interactive rating component</h1>
 
-  <!-- Rating state start -->
+		<article class="layout-margin">
+			<div class="fixed-centered">
 
-  How did we do?
+				<div class="rate-card-rnb">
+					<div class="icon-rounded-bg">
+						<img src="images/icon-star.svg" alt="Rating" class="ir-bg-img">
+					</div>
+					<h2 class="rc-rnb-heading">How did we do?</h2>
+					<p class="rc-rnb-desc">Please let us know how we did with your support request. All feedback is appreciated
+						to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+					<form action="pages/thank-you.html" class="form-legend-off" id="form-rating" method="get">
+						<fieldset class="fl-off-fieldset">
+							<legend class="fl-off-legend">Rate</legend>
 
-  1 2 3 4 5
+							<ul class="rate-round-number">
+								<li class="rate-rn-li"><input type="radio" id="1-star" name="rateRn" value="1"
+										class="rate-rn-input"><label for="1-star" class="rate-rn-label">1</label></li>
+								<li class="rate-rn-li"><input type="radio" id="2-star" name="rateRn" value="2"
+										class="rate-rn-input"><label for="2-star" class="rate-rn-label">2</label></li>
+								<li class="rate-rn-li"><input type="radio" id="3-star" name="rateRn" value="3"
+										class="rate-rn-input"><label for="3-star" class="rate-rn-label">3</label></li>
+								<li class="rate-rn-li"><input type="radio" id="4-star" name="rateRn" value="4"
+										class="rate-rn-input"><label for="4-star" class="rate-rn-label">4</label></li>
+								<li class="rate-rn-li"><input type="radio" id="5-star" name="rateRn" value="5"
+										class="rate-rn-input"><label for="5-star" class="rate-rn-label">5</label></li>
+							</ul>
+							<span class="validation-error" aria-live="polite"></span>
+						</fieldset>
 
-  Submit
+						<button type="submit" class="button-capsule">Submit</button>
+					</form>
+				</div>
 
-  <!-- Rating state end -->
+			</div>
 
-  <!-- Thank you state start -->
+		</article>
+	</main>
 
-  You selected <!-- Add rating here --> out of 5
+	<footer class="layout-margin">
 
-  Thank you!
+		<div class="attr-sl-desc fixed-centered">
+			<p class="attr-sl-desc-cnt">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					class="attr-sl-desc-a">Frontend Mentor</a>. Coded by <a href="https://twitter.com/ShameerKamalud1"
+					target="_blank" class="attr-sl-desc-a">Shameer Kamaludeen</a>.
+			</p>
+		</div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	</footer>
 </body>
+
 </html>

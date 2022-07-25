@@ -1,0 +1,26 @@
+// 1. Vendors
+@use 'vendors/normalize';
+
+// 2. Base stuff
+@use 'base/reset';
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/typography';
+@use 'base/helpers';
+
+// 3. Layout-related sections
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/main';
+@use 'layout/article';
+@use 'layout/sidebar';
+@use 'layout/forms';
+@use 'layout/footer';
+
+// 4. Page-specific styles
+@use 'pages/home';
+@use 'pages/thank-you';
+
+// 5. Themes
+@use 'themes/default';

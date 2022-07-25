@@ -1,0 +1,28 @@
+/* -----------------------------------------------------------------------------
+   || Abstracts - Default theme
+   ========================================================================== */
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+@use '../abstracts/variables' as var;
+@use '../abstracts/placeholders';
+
+html,
+body,
+article {
+	height: 100%;
+}
+
+body {
+	@extend %flex-dc-a-center;
+	background-color: var.$bc-secondary-dark;
+}
+
+main {
+	flex: 1;
+}
+
+article {
+	@extend %flex-vh-center;
+}

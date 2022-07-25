@@ -1,0 +1,23 @@
+/* -----------------------------------------------------------------------------
+   || Components - Rating block using rounded background number
+   ========================================================================== */
+
+@use 'sass:color';
+@use '../../abstracts/variables' as var;
+
+$background-color: var.$bc-secondary  !default;
+
+.rate-card-rnb {
+	padding: 24px;
+	background-color: color.adjust($background-color, $alpha: -0.4);
+	border-radius: 10px;
+
+	@media screen and (min-width: var.$mobile-view-landscape) {
+		border-radius: 25px;
+		padding: 32px 35px;
+	}
+}
+
+.rc-rnb-ta-center {
+	text-align: center;
+}

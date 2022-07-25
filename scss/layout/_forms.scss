@@ -1,0 +1,14 @@
+/* -----------------------------------------------------------------------------
+   || Abstracts - Forms
+   ========================================================================== */
+@use '../abstracts/placeholders';
+
+.form-legend-off {
+	.fl-off-fieldset {
+		@extend %fieldset-no-style;
+	}
+
+	.fl-off-legend {
+		@extend %hide-visually;
+	}
+}
