@@ -1,5 +1,4 @@
-/* -----------------------------------------------------------------------------
-   || Base - Typography
+/* || Base - Typography
    ========================================================================== */
 @use '../abstracts/variables' as var;
 
@@ -10,6 +9,12 @@
 
 // || Placeholders
 // -----------------------------------------------------------------------------
+
+%base-spacing {
+	word-spacing: 0.8px;
+	letter-spacing: 0.4px;
+}
+
 %primary-l-font {
 	font-size: var.$fs-l;
 	color: var.$c-primary;

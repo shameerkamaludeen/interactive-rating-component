@@ -1,7 +1,13 @@
-/* -----------------------------------------------------------------------------
-   || Abstracts - Forms
+/* || Abstracts - Forms
    ========================================================================== */
-@use '../abstracts/placeholders';
+@use '../base/utilities';
+
+// Remove field set default style
+%fieldset-no-style {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
 
 .form-legend-off {
 	.fl-off-fieldset {

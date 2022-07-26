@@ -1,12 +1,8 @@
-// -----------------------------------------------------------------------------
 // Abstracts - mixins
-// -----------------------------------------------------------------------------
-@use '../abstracts/placeholders';
+// =============================================================================
+
 @use '../abstracts/variables' as var;
 
-/**
-* Fixed horizontally centered
-*/
 @mixin fixed-h-centered {
 	margin-left: auto;
 	margin-right: auto;

@@ -1,9 +1,9 @@
-/* -----------------------------------------------------------------------------
-   || Components - Rating component with number and rounded background
+/* || Components - Rating component with number and rounded background
    ========================================================================== */
 
 @use '../../abstracts/variables' as var;
-@use '../../abstracts/placeholders';
+@use '../../base/utilities';
+@use '../../base/sitewide';
 @use 'sass:color';
 
 .rate-round-number {

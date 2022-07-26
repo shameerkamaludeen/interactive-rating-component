@@ -1,12 +1,11 @@
-/* -----------------------------------------------------------------------------
-   || Abstracts - Default theme
+/* || Abstracts - Default theme
    ========================================================================== */
-// -----------------------------------------------------------------------------
+	 
 // When having several themes, this file contains everything related to the
 // default one.
-// -----------------------------------------------------------------------------
+
 @use '../abstracts/variables' as var;
-@use '../abstracts/placeholders';
+@use '../base/sitewide';
 
 html,
 body,

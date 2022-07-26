@@ -1,9 +1,8 @@
-/* -----------------------------------------------------------------------------
-   || Components - Attribution single line description
+/* || Components - Attribution single line description
    ========================================================================== */
 
 @use '../../abstracts/variables' as var;
-@use '../../abstracts/placeholders';
+@use '../../base/sitewide';
 
 $font-size: var.$fs-s  !default;
 $color: var.$c-secondary  !default;
