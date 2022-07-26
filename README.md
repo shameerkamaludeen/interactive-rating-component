@@ -11,10 +11,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 This project I considered as a learning process for a lot of things which I have learned recently like SCSS, modular approach to web design, following sass guidelines and a few others. This project was nice to experiment with my learnings as the project is a very simple block and I am able to focus on the guidelines, modularity and architecture of web development.
