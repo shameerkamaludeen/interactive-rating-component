@@ -1,0 +1,48 @@
+/* || Abstracts - Default theme
+   ========================================================================== */
+
+// When having several themes, this file contains everything related to the
+// default one.
+
+@use '../abstracts/variables' as var;
+@use '../base/sitewide';
+
+// || General styles
+
+html,
+body,
+article {
+	height: 100%;
+}
+
+body {
+	@extend %flex-dc-a-center;
+	background-color: var.$bc-secondary-dark;
+}
+
+// ||Main
+
+main {
+	flex: 1;
+}
+
+// || Article
+
+article {
+	@extend %flex-vh-center;
+}
+
+// || Pages
+
+.rc-rnb-desc {
+	@media screen and (min-width: var.$mobile-view-landscape) {
+		line-height: 1.6;
+	}
+}
+
+// || Footer
+
+.attr-sl-desc-cnt {
+	text-align: center;
+	margin: 10px 0;
+}

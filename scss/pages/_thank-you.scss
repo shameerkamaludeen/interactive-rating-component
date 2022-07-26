@@ -1,0 +1,42 @@
+/* || Pages - Thank you
+   ========================================================================== */
+@use '../abstracts/variables' as var;
+@use '../components/block/rate-card-rnb';
+@use '../components/attribution/attr-sl-desc';
+@use '../components/shapes/capsule-shape-element';
+
+.shape-capsule-thank {
+	padding: 7px 13px 3px;
+}
+
+.rate-card-rnb-thank {
+	padding-top: 34px;
+
+	@media screen and (min-width: var.$mobile-view-landscape) {
+		padding-top: 45px;
+	}
+
+	.rc-rnb-image-wr {
+		margin-bottom: 23px;
+
+		@media screen and (min-width: var.$mobile-view-landscape) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.rc-rnb-note {
+		margin-bottom: 2em;
+
+		@media screen and (min-width: var.$mobile-view-landscape) {
+			margin-bottom: 2.4em;
+		}
+	}
+
+	.rc-rnb-heading {
+		margin-bottom: 0.5em;
+	}
+
+	.rc-rnb-desc {
+		margin-top: 0;
+	}
+}
