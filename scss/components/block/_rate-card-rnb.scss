@@ -20,3 +20,19 @@ $background-color: var.$bc-secondary  !default;
 .rc-rnb-ta-center {
 	text-align: center;
 }
+
+.rc-rnb-image-wr {
+	height: 97px;
+
+	@media screen and (min-width: var.$mobile-view-landscape) {
+		height: 110px;
+	}
+}
+
+.rc-rnb-image {
+	height: 100%;
+}
+
+.rc-rnb-note {
+	color: color.adjust(var.$bc-primary, $alpha: -0.3, $whiteness: 20%);
+}

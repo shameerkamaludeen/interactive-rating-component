@@ -10,6 +10,7 @@ $width: 100% !default;
 $outline-color: var.$c-secondary  !default;
 $hover-bg-color: color.adjust($background-color, $lightness: 5%) !default;
 $hover-color: var.$bc-primary  !default;
+$border-radius: 200px !default;
 
 
 .button-capsule {

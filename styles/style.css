@@ -341,7 +341,7 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   font-family: "Overpass", sans-serif;
 }
-@media screen and (min-width: 53em) {
+@media screen and (min-width: 37em) {
   h2 {
     font-size: 1.71rem;
   }
@@ -482,6 +482,17 @@ main {
   flex: 1;
 }
 
+@media screen and (min-width: 37em) {
+  .rc-rnb-desc {
+    line-height: 1.6;
+  }
+}
+
+.attr-sl-desc-cnt {
+  text-align: center;
+  margin: 10px 0;
+}
+
 /* || Components - Rating block using rounded background number
    ========================================================================== */
 .rate-card-rnb {
@@ -498,6 +509,23 @@ main {
 
 .rc-rnb-ta-center {
   text-align: center;
+}
+
+.rc-rnb-image-wr {
+  height: 97px;
+}
+@media screen and (min-width: 37em) {
+  .rc-rnb-image-wr {
+    height: 110px;
+  }
+}
+
+.rc-rnb-image {
+  height: 100%;
+}
+
+.rc-rnb-note {
+  color: rgba(251, 145, 70, 0.7);
 }
 
 /* || Components - Icon rounded with background 
@@ -594,31 +622,72 @@ main {
 
 /* || Pages - Home
    ========================================================================== */
-@media screen and (min-width: 37em) {
-  .rc-rnb-heading {
-    margin-top: 1.5em;
-    margin-bottom: 0;
-  }
-}
-
-.button-capsule {
+.rate-card-rnb-home .button-capsule {
   padding-top: 14px;
   padding-bottom: 14px;
   margin: 14px 0 8px;
   letter-spacing: 2px;
 }
 @media screen and (min-width: 37em) {
-  .button-capsule {
+  .rate-card-rnb-home .button-capsule {
     margin: 22px 0 2px;
   }
 }
+@media screen and (min-width: 37em) {
+  .rate-card-rnb-home .rc-rnb-heading {
+    margin-top: 1.2em;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 37em) {
+  .rate-card-rnb-home .rc-rnb-desc {
+    margin-top: 0.8em;
+  }
+}
 
-.attr-sl-desc-cnt {
-  text-align: center;
-  margin: 10px 0;
+/* Component - Capsule shape element or block
+   -------------------------------------------------------------------------- */
+.shape-capsule {
+  display: inline-block;
+  border-radius: 200px;
+  background-color: rgba(124, 135, 152, 0.1);
 }
 
 /* || Pages - Thank you
    ========================================================================== */
+.shape-capsule-thank {
+  padding: 7px 13px 3px;
+}
+
+.rate-card-rnb-thank {
+  padding-top: 34px;
+}
+@media screen and (min-width: 37em) {
+  .rate-card-rnb-thank {
+    padding-top: 45px;
+  }
+}
+.rate-card-rnb-thank .rc-rnb-image-wr {
+  margin-bottom: 23px;
+}
+@media screen and (min-width: 37em) {
+  .rate-card-rnb-thank .rc-rnb-image-wr {
+    margin-bottom: 30px;
+  }
+}
+.rate-card-rnb-thank .rc-rnb-note {
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 37em) {
+  .rate-card-rnb-thank .rc-rnb-note {
+    margin-bottom: 2.4em;
+  }
+}
+.rate-card-rnb-thank .rc-rnb-heading {
+  margin-bottom: 0.5em;
+}
+.rate-card-rnb-thank .rc-rnb-desc {
+  margin-top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

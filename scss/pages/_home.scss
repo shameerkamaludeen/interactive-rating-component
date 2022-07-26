@@ -9,26 +9,30 @@
 @use '../components/attribution/attr-sl-desc';
 @use '../components/error/validation-error';
 
-.rc-rnb-heading {
+.rate-card-rnb-home {
+	.button-capsule {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		margin: 14px 0 8px;
+		letter-spacing: 2px;
 
-	@media screen and (min-width: var.$mobile-view-landscape) {
-		margin-top: 1.5em;
-		margin-bottom: 0;
+		@media screen and (min-width: var.$mobile-view-landscape) {
+			margin: 22px 0 2px;
+		}
 	}
-}
 
-.button-capsule {
-	padding-top: 14px;
-	padding-bottom: 14px;
-	margin: 14px 0 8px;
-	letter-spacing: 2px;
+	.rc-rnb-heading {
 
-	@media screen and (min-width: var.$mobile-view-landscape) {
-		margin: 22px 0 2px;
+		@media screen and (min-width: var.$mobile-view-landscape) {
+			margin-top: 1.2em;
+			margin-bottom: 0;
+		}
 	}
-}
 
-.attr-sl-desc-cnt {
-	text-align: center;
-	margin: 10px 0;
+	.rc-rnb-desc {
+
+		@media screen and (min-width: var.$mobile-view-landscape) {
+			margin-top: 0.8em;
+		}
+	}
 }

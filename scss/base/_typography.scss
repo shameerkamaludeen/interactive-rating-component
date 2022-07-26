@@ -20,7 +20,7 @@
 	color: var.$c-primary;
 	font-family: var.$ff-primary;
 
-	@media screen and (min-width: var.$tablet-view) {
+	@media screen and (min-width: var.$mobile-view-landscape) {
 		font-size: (var.$fs-l * 1.14);
 	}
 }
@@ -52,91 +52,75 @@
 // xx-large, xx-small)
 
 // consider this type of mixin in the future
-@mixin primary-l-content($default: true,
-	$line-height: var.$lh-base,
+@mixin primary-l-content($line-height: var.$lh-base,
 	$font-weight: 700,
 	$text-transform: capitalize) {
 
 	@extend %primary-l-font;
 
-	// make it as function if required so we can use this for all content type
-	@if $default {
-		@if $line-height {
-			line-height: $line-height;
-		}
+	@if $line-height {
+		line-height: $line-height;
+	}
 
-		@if $font-weight {
-			font-weight: $font-weight;
-		}
+	@if $font-weight {
+		font-weight: $font-weight;
+	}
 
-		@if $text-transform {
-			text-transform: $text-transform;
-		}
+	@if $text-transform {
+		text-transform: $text-transform;
 	}
 }
 
-@mixin secondary-l-content($default: true,
-	$line-height: var.$lh-base,
+@mixin secondary-l-content($line-height: var.$lh-base,
 	$font-weight: 700,
 	$text-transform: capitalize) {
 
 	@extend %secondary-l-font;
 
-	// make it as function if required so we can use this for all content type
-	@if $default {
-		@if $line-height {
-			line-height: $line-height;
-		}
+	@if $line-height {
+		line-height: $line-height;
+	}
 
-		@if $font-weight {
-			font-weight: $font-weight;
-		}
+	@if $font-weight {
+		font-weight: $font-weight;
+	}
 
-		@if $text-transform {
-			text-transform: $text-transform;
-		}
+	@if $text-transform {
+		text-transform: $text-transform;
 	}
 }
 
-@mixin secondary-m-content($default: true,
-	$line-height: var.$lh-base,
+@mixin secondary-m-content($line-height: var.$lh-base,
 	$font-weight: 700,
 	$text-transform: capitalize) {
 
 	@extend %secondary-m-font;
 
-	// make it as function if required so we can use this for all content type
-	@if $default {
-		@if $line-height {
-			line-height: $line-height;
-		}
+	@if $line-height {
+		line-height: $line-height;
+	}
 
-		@if $font-weight {
-			font-weight: $font-weight;
-		}
+	@if $font-weight {
+		font-weight: $font-weight;
+	}
 
-		@if $text-transform {
-			text-transform: $text-transform;
-		}
+	@if $text-transform {
+		text-transform: $text-transform;
 	}
 }
 
-@mixin secondary-s-content($default: true,
-	$line-height: var.$lh-base,
+@mixin secondary-s-content($line-height: var.$lh-base,
 	$font-weight: 700,
 	$text-transform: capitalize) {
 
 	@extend %secondary-s-font;
 
-	// make it as function if required so we can use this for all content type
-	@if $default {
-		@if $line-height {
-			line-height: $line-height;
-		}
+	@if $line-height {
+		line-height: $line-height;
+	}
 
-		@if $font-weight {
-			font-weight: $font-weight;
-		}
+	@if $font-weight {
+		font-weight: $font-weight;
 	}
 }
 
@@ -149,30 +133,25 @@ body {
 }
 
 h2 {
-	@include primary-l-content($default: true,
-		$text-transform: null);
+	@include primary-l-content($text-transform: null);
 }
 
 h3 {
-	@include secondary-m-content($default: true,
-		$text-transform: null);
+	@include secondary-m-content($text-transform: null);
 }
 
 p {
-	@include secondary-m-content($default: true,
-		$line-height: var.$lh-normal,
+	@include secondary-m-content($line-height: var.$lh-normal,
 		$font-weight: 400,
 		$text-transform: null);
 }
 
 label {
-	@include secondary-m-content($default: true,
-		$font-weight: 400,
+	@include secondary-m-content($font-weight: 400,
 		$text-transform: null);
 }
 
 button {
-	@include secondary-m-content($default: true,
-		$font-weight: 400,
+	@include secondary-m-content($font-weight: 400,
 		$text-transform: uppercase);
 }
